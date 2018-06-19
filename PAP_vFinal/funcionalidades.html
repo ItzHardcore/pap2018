@@ -1,0 +1,172 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>Vigillance - Segurança</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--jQuery-->
+    <script> window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- CSS -->
+
+    <style>
+
+        .modal-body{
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+          box-sizing: border-box;
+      }
+      
+      /* Add padding to containers */
+      .container {
+          padding: 16px;
+      }
+      
+      /* Full-width input fields */
+      input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+      }
+      
+      /* Overwrite default styles of hr */
+      hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+      }
+      
+      /* Set a style for the submit button */
+      .registerbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+      }
+      
+      .registerbtn:hover {
+          opacity: 1;
+      }
+      
+      /* Add a blue text color to links */
+      a {
+          color: dodgerblue;
+      }
+      
+      /* Set a grey background color and center the text of the "sign in" section */
+      .signin {
+          background-color: #f1f1f1;
+          text-align: center;
+      }
+           
+      .sticky-top{ 
+          background-color: #383636  ;}
+      
+      .d-md-inline-block{
+          color: white;
+        }	
+      .btn-outline-dark{
+          color:white !important;
+      }
+      </style>
+    </head>
+
+
+    <body>
+
+        <!--Barra de topo-->
+        
+            <nav class="site-header sticky-top py-1">
+              <div class="container d-flex flex-column flex-md-row justify-content-between">
+              <a class="py-2" href="./">
+              <svg xmlns="vigillance.ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+              </a>
+              <a class="py-2 d-none d-md-inline-block" href="produtos.html">Produtos</a>
+              <a class="py-2 d-none d-md-inline-block" href="funcionalidades.html">Funcionalidades</a>
+              <a class="py-2 d-none d-md-inline-block" href="sobrenos.html">Sobre Nós</a>
+              <a class="py-2 d-none d-md-inline-block" href="https://outlook.live.com/owa/">Suporte</a>
+              <!--Botão para modal Login-->
+              <button type="button" id="modregisto" class="btn-sm btn-outline-dark" data-toggle="modal" data-target="#modregisto">Registo</button>
+              <button id="modlogin" class="btn-sm btn-outline-dark" data-toggle="modal" data-target="#modlogin">Entrar</button>
+              </div>
+            </nav>
+        <!--Fim da Barra-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="container">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="vigillance.ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Funcionalidades</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="">Sobre Vigillance</a></li>
+          <li><a class="text-muted" href="?">Funcionalidades da App</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Suporte</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="">Download do Software</a></li>
+          <li><a class="text-muted" href="">Contactos</a></li>
+          <li><a class="text-muted" href="?">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div class="col-5 col-md">
+        <h5>Sobre</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="sobrenos.html">Equipa</a></li>
+          <li><a class="text-muted" href="">Termos</a></li>
+        </ul>
+      </div>
+  </footer>
+  </body>
+  </html>

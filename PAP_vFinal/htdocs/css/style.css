@@ -1,0 +1,96 @@
+﻿* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background-image: url("../img/login_fundo.jpg");
+  
+  background-size: cover;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+a {
+  color: rgb(54, 92, 62);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(230, 230, 230);
+  text-decoration: underline;
+}
+.header {
+  width: 25%;
+  margin: 50px auto 0px;
+  color: rgb(50, 107, 61);
+  background:rgba(201, 195, 195, 0.6);   
+  text-align: center;
+  padding: 20px;
+  
+}
+.content {
+  width: 25%;
+  margin: 0px auto;
+  padding: 20px;
+  background: rgba(201, 195, 195, 0.6);  
+}
+.input-group {
+  margin: 10px 0px 15px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 0px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.input-group input:focus {
+  border-radius: 0px;
+  border: 1px solid rgb(54, 92, 62);
+}
+.btn {
+  background-color: rgb(50, 107, 61); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+}
+.btn:hover {
+  background-color: rgb(23, 65, 31); /* Green */
+  color: white;
+}
+.error {
+  width: 93%; 
+  padding: 5px 10px;
+  display:block;
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede;  
+  text-align: left;
+  text-align: center;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+  text-align: center;
+}
