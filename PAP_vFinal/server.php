@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<style>
-
-
-
-</style>
-
-</head>
-
 <?php
 session_start();
+
 
 // Variaveis
 $username = "";
@@ -22,7 +11,7 @@ $errors = array();
 $conn = mysqli_connect('localhost', 'root', '', 'vigillance_final');
 
 // Registo
-if (isset($_POST['reg_user'])) {
+if (isset($_POST['registar'])) {
   // recebe todos os inputs do form
   $username = mysqli_real_escape_string($conn, $_POST['nome']);
   $nome = mysqli_real_escape_string($conn, $_POST['email']);
@@ -58,7 +47,7 @@ if (isset($_POST['reg_user'])) {
     $_SESSION['nome'] = $nome;
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Registado com Sucesso!";
-    header('location: index.php');
+    header('location: welcome.php');
   }
 }
 

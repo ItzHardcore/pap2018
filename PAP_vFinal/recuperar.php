@@ -4,7 +4,7 @@
     die('<p>Não é possível alterar a password: dados em falta</p>');
  
   mysql_connect('localhost', 'root', '');  // ligar à base de dados
-  mysql_select_db('test');  // escolher a base de dados pretendida
+  mysql_select_db('vigillance_final');  // escolher a base de dados pretendida
  
   $email = mysql_real_escape_string($_GET['utilizador']);
   $hash = mysql_real_escape_string($_GET['confirmacao']);

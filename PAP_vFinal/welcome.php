@@ -1,11 +1,11 @@
 <?php
-include('server.php')
+include_once 'connect.php';
 ?>
 
 <html>
+<body>
 
-<head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
@@ -101,6 +101,9 @@ include('server.php')
         .btn-outline-dark{
             color:white !important;
         }
+        b{
+            color:white !important;
+            }
     </style>
 
 </head>
@@ -120,8 +123,8 @@ include('server.php')
         <a class="py-2 d-none d-md-inline-block" href="sobrenos.html">Sobre Nós</a>
         <a class="py-2 d-none d-md-inline-block" href="">Suporte</a>
         <!--Botão para modal Login-->
-        <button type="button" class="btn-sm btn-outline-dark" data-toggle="modal" data-target="#modregisto">Registo</button>
         <button  class="btn-sm btn-outline-dark" data-toggle="modal" data-target="#modlogin">Entrar</button>
+        <b> Bem-vindo <?php echo $_SESSION["nome"]; ?></b>
     </div>
 </nav>
 <center>
@@ -156,52 +159,7 @@ include('server.php')
     </div>
 </center>
 <!-- Modal Registo -->
-<form method="POST" action="registar.php">
-<div class="container">
-    <div class="modal fade" id="modregisto">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!--header-->
-                <div class="modal-header">
-                    <h5 class="modal-title" align="center"> Vigillance</h5> <!--AQUI PODIA POR UMA IMAGEM-->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h1 align="center">Registo</h1>
-                        <p align="center">Por favor, preencha este formulário para criar uma conta.</p>
-                        <hr>
-                            <label for="nome"><b>Nome</b></label>
-                            <input type="text" placeholder="Exemplo : Diogo" name="nome">
 
-                            <label for="apelido"><b>Apelido</b></label>
-                            <input type="text" placeholder="Exemplo : Rodrigues" name="apelido">
-
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="exemplo@gmail.com" name="email">
-                            </div>
-                            <label for="passe"><b>Palavra-Passe</b></label>
-                            <input type="password" placeholder="" name="password">
-                            <!--AQUELA CENA PARA MEDIR A PALAVRA PASSE-->
-
-                            <label for="rep_passe"><b>Repetir Palavra-Passe</b></label>
-                            <input type="password" placeholder="" name="rep_password">
-                            <hr>
-                            <p>Ao criar uma conta, concorda com os nossos <a href="#">Termos & Privacidades</a>.</p>
-
-                            <button type="submit" class="registerbtn">Registar</button>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    </form>
 
 <!-- Modal Login -->
 
