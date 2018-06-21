@@ -2,7 +2,7 @@
 <?php
   if( !empty($_POST) ){
     // processar o pedido
-    mysql_connect('localhost', 'root', '','vigillance');
+   require 'server.php';
      
     $email = mysql_real_escape_string($_POST['email']);
     $q = mysql_query("SELECT * FROM utilizadores WHERE email = '$email'");
