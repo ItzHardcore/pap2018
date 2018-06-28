@@ -1,0 +1,20 @@
+﻿1. Login e Registo, quando fazes login crias uma session e passas o id do utilizaodr para var global 
+
+2. Criar admin office, quando logas com admin e uma palavra passe vai para uma pagina que so nos podemos ver onde podes ver os registos dos utiliazdores
+fazer altera�oes etc...
+
+3. Um espaço no website a dizer download app com link
+
+4. uma pagina de recuper�aao de palavra passe que funciona com o smtp do gmail
+https://wiki.portugal-a-programar.pt/dev_web:php:recuperacao_password
+
+6. uma pagina q mostra os registos do utilizador com a var global id que passas no login (JSON AJAX)
+
+7. uma que mostra todas as camaras que o utilizador tem adicionadas tambem por id q passas no login json ajax
+https://www.w3schools.com/html/html5_video.asp
+
+8. FTP para transverir os videos q estao no sd da camera (DEIXA PARA ULTIMO)
+
+9. uma pagina com os videos da camera para visualizar 
+
+PARA ESCAPAR DO INJECTION UTILIZAR FUNçÃO mysqli_real_escape_string($conn,$_POST['Qualquer coisa'])
